@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="option"
+            type="com.example.realmtestinterview.dataclasses.Option" />
+    </data>
+
+
+    <LinearLayout
+
+        android:layout_margin="@dimen/dp10"
+        android:background="@color/graylight"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:minWidth="@dimen/dp80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgitem"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30" />
+
+        <TextView
+            android:layout_margin="@dimen/dp3"
+            android:id="@+id/txtoption"
+            android:gravity="center_vertical"
+            android:text="@{option.name}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</layout>
